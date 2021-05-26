@@ -7,6 +7,10 @@ personId = "xxxxxxxxx"
 authorization ='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 
 my_headers ={'Authorization': authorization}
+
+# Here we get the list of vaccination centers based on the list of Postal codes in the csv file
+# the tkAttiki.csv includes postal codes for Attica region 
+# the tkGreece.csv includes the postal codes for all Greece
 with open('tkAttiki.csv', 'r', encoding="utf8") as TK: #  tkGreece.csv
     reader = csv.reader(TK)
     for row in reader:
@@ -23,11 +27,13 @@ with open('tkAttiki.csv', 'r', encoding="utf8") as TK: #  tkGreece.csv
                     emvoliastika.add((center.get('name'), center.get('id'),center.get('tk'), response.json().get('startDate')))
 
             print(emvoliastika)
-#
+# we write the list of vaccination centers (name, id, postal code, start date in emvoliastika.json file
 with open('emvoliastika.json', 'w', encoding="utf8") as fp:
     json.dump(list(emvoliastika), fp)
 fp.close()
 
+
+# We set the input criteria for the first vacination day we want to search, with day=26 we search for '2021-05-26' and on (line 51)
 day = 26
 
 from datetime import datetime
@@ -37,7 +43,8 @@ with open('emvoliastika.json', 'r', encoding="utf8") as fp:
     for key in reader:
         # print(key[1])
         # print(key[3])
-
+        
+        # because the start date might not be available, we search for a range of days after the start date (be carefull if month changes also)
         for i in range(0,6):
             response = requests.post("https://emvolio.gov.gr/app/api/CovidService/CV_TimeSlots_Free",
                                      data={"centerId": key[1], "personId": personId, "firstDoseDate": "null",
@@ -51,11 +58,13 @@ with open('emvoliastika.json', 'r', encoding="utf8") as fp:
                                                    "firstDoseDate": response.json()['timeslotsFree'][0]['onDate'],
                                                    "zoneNum": "null", "selectedDate": "2021-05-29T21:00:00.000Z",
                                                    "dose": "2", "requestRecommended": "true"}, headers=my_headers)
+                    
+                    # if we can get a start date we try to get a date for the second vaccination apointment 
                     date_time_0 = datetime.strptime(response.json()['timeslotsFree'][0]['onDate'], '%Y-%m-%dT%H:%M:%S+03:00')
                     date_time_1 = datetime.strptime(response2.json()['timeslotsFree'][0]['onDate'], '%Y-%m-%dT%H:%M:%S+03:00')
 
                     delta = date_time_1 - date_time_0
-                    # get the vaccination centers that the available days between the shots is less than 50 (ie non Astra Zeneca)
+                    # we print the vaccination centers that the available days between the two possible apointments is less than 50 (ie non Astra Zeneca)
                     if (delta.days < 50):
                         print(key)
                         print(delta.days)
