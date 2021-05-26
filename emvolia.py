@@ -74,7 +74,7 @@ with open('emvoliastika.json', 'r', encoding="utf8") as fp:
                                 delta = date_time_1 - date_time_0
                                 # we print the vaccination centers that the available days between the two possible apointments is less than 50 (ie POSSIBLE non Astra Zeneca)
                                 if (delta.days < 50):
-                                    print("Vaccination center: " + str(key[0]) + " PK: " + str(key[2]) + "available date of 1st vaccination " + response.json()['timeslotsFree'][i]['onDate'])
+                                    print("Vaccination center: " + str(key[0]) + " PK: " + str(key[2]) + " available date of 1st vaccination " + response.json()['timeslotsFree'][i]['onDate'])
                                     print("Days between vaccination appointments " + str(delta.days))
                                     break
                         break
