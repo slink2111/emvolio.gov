@@ -3,6 +3,8 @@ import json
 import csv
 
 emvoliastika = set()
+# set the personId and authorization based on the session info you have with the https://emvolio.gov.gr, you can find them in the Web developer options of your browser 
+# in the Network -> Requests and Header tabs
 personId = "xxxxxxxxx"
 authorization ='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 
@@ -33,7 +35,7 @@ with open('emvoliastika.json', 'w', encoding="utf8") as fp:
 fp.close()
 
 
-# We set the input criteria for the first vacination day we want to search, with day=26 we search for '2021-05-26' and on (line 51)
+# We set the input criteria for the first vacination day we want to search, with day=26 we search for '2021-05-26' and on (line 53)
 day = 26
 
 from datetime import datetime
