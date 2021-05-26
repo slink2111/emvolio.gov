@@ -61,7 +61,7 @@ with open('emvoliastika.json', 'r', encoding="utf8") as fp:
                         response2 = requests.post("https://emvolio.gov.gr/app/api/CovidService/CV_TimeSlots_Free",
                                                   data={"centerId": key[1], "personId": personId,
                                                         "firstDoseDate": response.json()['timeslotsFree'][i]['onDate'],
-                                                        "zoneNum": "null", "selectedDate": "2021-05-29T21:00:00.000Z",
+                                                        "zoneNum": "null", "selectedDate": response.json()['timeslotsFree'][i]['onDate'],
                                                         "dose": "2", "requestRecommended": "true"}, headers=my_headers)
                         # if we can get a start date we try to get a date for the second vaccination apointment
                         for j, percents in enumerate(response2.json()['timeslotsFree']):
