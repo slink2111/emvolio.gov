@@ -62,11 +62,38 @@
 
 fgsfdgs
 
-| **Column A** | **Column B** | **Column C** |
-|--------------|--------------|--------------|
-| a            | b            | c            |
-| D            | E            | H            |
-| G            | I            | K            |
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th><strong>Column A</strong></th>
+<th><strong>Column B</strong></th>
+<th><strong>Column C</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>b</td>
+<td><p>c</p>
+<p>sg</p></td>
+</tr>
+<tr>
+<td>D</td>
+<td>E</td>
+<td>H</td>
+</tr>
+<tr>
+<td>G</td>
+<td>I</td>
+<td>K</td>
+</tr>
+</tbody>
+</table>
 
 <figure>
 <img src="extracted-media/media/image1.png" style="width:1.61481in;height:1.03139in" alt="A screenshot of a computer AI-generated content may be incorrect." />
