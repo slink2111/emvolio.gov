@@ -42,7 +42,7 @@
 
 4.  D
 
-<!-- -->
+&nbsp;
 
 1.  A
 
@@ -60,52 +60,29 @@
 
 2.  H
 
+> if (a \> 3) {
+>
+> moveShip(5 \* gravity, DOWN);
+>
+> }
+
 fgsfdgs
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr>
-<th><strong>Column A</strong></th>
-<th><strong>Column B</strong></th>
-<th><strong>Column C</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>a</td>
-<td>b</td>
-<td><p>c</p>
-<p>sg</p></td>
-</tr>
-<tr>
-<td>D</td>
-<td>E</td>
-<td>H</td>
-</tr>
-<tr>
-<td>G</td>
-<td>I</td>
-<td>K</td>
-</tr>
-</tbody>
-</table>
+| **Column A** | **Column B** | **Column C** |
+|-------------:|--------------|--------------|
+|            a | b            | c            |
+|            D | E            | H            |
+|            G | I            | K            |
 
-<figure>
-<img src="extracted-media/media/image1.png" style="width:1.61481in;height:1.03139in" alt="A screenshot of a computer AI-generated content may be incorrect." />
-<figcaption><p>Figure 1. Image A</p></figcaption>
-</figure>
+![A screenshot of a computer AI-generated content may be incorrect.](extracted-media/media/image1.png)
 
-<img src="extracted-media/media/image2.png" style="width:1.79192in;height:1.06265in" alt="A screenshot of a computer AI-generated content may be incorrect." />
+Figure 1. Image A
 
-<figure>
-<img src="extracted-media/media/image3.png" style="width:2.03153in;height:1.40645in" alt="imageA.jpg" />
-<figcaption><p>Figure 2 Image 2</p></figcaption>
-</figure>
+![A screenshot of a computer AI-generated content may be incorrect.](extracted-media/media/image2.png)
+
+![imageA.jpg](extracted-media/media/image3.png)
+
+Figure 2 Image 2
 
 ## Chapter 1.1
 
@@ -119,6 +96,8 @@ fgsfdgs
 
 Bold and italic example
 
-I added example pages and a **structured** navigation to better demonstrate the technical *possibilities* of what can be achieved<span class="mark">. Presented structure</span> is my *personal vision* of how we could be able to provide **logical and easy to use structure for all the activities in the SDMMS**.
+I added example pages and a **structured** navigation to better demonstrate the technical *possibilities* of what can be achieved. Presented structure is my *personal vision* of how we could be able to provide **logical and easy to use structure for all the activities in the SDMMS**.
+
+WARNING
 
 New paragraph sadkjhgfkasd hgfouiash dgufhbasiuld ghiuasbg iubasdgbfiausbgq wrpgbipv jabsbviuab sdfuigbqwiurbgfqiuwdsbfvias viuaps vua9sdhbiupasdgfi uasgfiuasd fiuasgdfiugasd iufgasdiuf gasdufgiausfg iuasdgf iuasdgf iausdgfiuasdgf asdfg ai
