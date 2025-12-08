@@ -101,3 +101,7 @@ I added example pages and a **structured** navigation to better demonstrate the 
 > [!WARNING]
 > New paragraph sadkjhgfkasd hgfouiash dgufhbasiuld ghiuasbg iubasdgbfiausbgq wrpgbipv jabsbviuab sdfuigbqwiurbgfqiuwdsbfvias viuaps vua9sdhbiupasdgfi uasgfiuasd fiuasgdfiugasd iufgasdiuf gasdufgiausfg iuasdgf iuasdgf iausdgfiuasdgf asdfg ai
 
+> \> \[!NOTE\]
+>
+> Dasdgasgasfg as fg as gas fgasfgasf g.
+
