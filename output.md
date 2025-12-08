@@ -98,6 +98,6 @@ Bold and italic example
 
 I added example pages and a **structured** navigation to better demonstrate the technical *possibilities* of what can be achieved. Presented structure is my *personal vision* of how we could be able to provide **logical and easy to use structure for all the activities in the SDMMS**.
 
-WARNING
+> [!WARNING]
+> New paragraph sadkjhgfkasd hgfouiash dgufhbasiuld ghiuasbg iubasdgbfiausbgq wrpgbipv jabsbviuab sdfuigbqwiurbgfqiuwdsbfvias viuaps vua9sdhbiupasdgfi uasgfiuasd fiuasgdfiugasd iufgasdiuf gasdufgiausfg iuasdgf iuasdgf iausdgfiuasdgf asdfg ai
 
-New paragraph sadkjhgfkasd hgfouiash dgufhbasiuld ghiuasbg iubasdgbfiausbgq wrpgbipv jabsbviuab sdfuigbqwiurbgfqiuwdsbfvias viuaps vua9sdhbiupasdgfi uasgfiuasd fiuasgdfiugasd iufgasdiuf gasdufgiausfg iuasdgf iuasdgf iausdgfiuasdgf asdfg ai
